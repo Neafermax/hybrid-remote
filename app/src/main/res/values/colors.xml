@@ -3,7 +3,11 @@
     <color name="bg_main">#0F1015</color>
     <color name="bg_sidebar">#181A20</color>
     <color name="bg_button">#22242C</color>
+    <color name="bg_pill">#2A2D37</color>
     <color name="accent_blue">#4285F4</color>
+    <color name="accent_purple">#7C4DFF</color>
+    <color name="accent_pink">#FF4D8D</color>
+    <color name="accent_orange">#FF9142</color>
     <color name="text_primary">#FFFFFF</color>
     <color name="text_secondary">#AAAAAA</color>
     <color name="status_ok">#4CAF50</color>
