@@ -144,5 +144,11 @@ class AdbClient(private val host: String, private val port: Int = 5555) {
         const val VOLUME_UP = 24
         const val VOLUME_DOWN = 25
         const val MUTE = 164
+        const val CHANNEL_UP = 166
+        const val CHANNEL_DOWN = 167
+        const val PROG_RED = 183
+        const val PROG_GREEN = 184
+        const val PROG_YELLOW = 185
+        const val PROG_BLUE = 186
     }
 }
