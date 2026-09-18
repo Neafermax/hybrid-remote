@@ -4,83 +4,46 @@
     android:layout_height="match_parent"
     android:orientation="horizontal"
     android:background="@color/bg_main">
-
-    <!-- SIDEBAR -->
-    <LinearLayout
-        android:layout_width="140dp"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="@color/bg_sidebar"
-        android:paddingTop="24dp"
-        android:paddingHorizontal="10dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ATV + IR"
-            android:textColor="@color/accent_blue"
-            android:textStyle="bold"
-            android:textSize="18sp"
-            android:layout_marginBottom="24dp" />
-
-        <Button
-            android:id="@+id/btnModeWifi"
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Mando Wi-Fi"
-            android:textColor="@color/text_primary"
-            android:background="@color/accent_blue"
-            android:padding="14dp"
-            android:layout_marginBottom="10dp" />
-
-        <Button
-            android:id="@+id/btnModeIr"
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Mando Infrarrojo"
-            android:textColor="@color/text_secondary"
-            android:background="@color/bg_button"
-            android:padding="14dp" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
-
-        <TextView
-            android:id="@+id/tvStatus"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="● Desconectado"
-            android:textColor="@color/status_error"
-            android:textSize="12sp"
-            android:layout_marginBottom="16dp" />
-    </LinearLayout>
-
+    
     <!-- CONTENIDO -->
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="vertical"
-        android:paddingTop="20dp">
+<LinearLayout
+    android:layout_width="match_parent"   ← antes era 0dp + layout_weight="1"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="20dp">
 
-        <TextView
-            android:id="@+id/tvModeTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="Modo: Android TV (Wi-Fi)"
-            android:textColor="@color/text_primary"
-            android:textSize="16sp"
-            android:layout_marginBottom="12dp" />
+        <LinearLayout
+    android:id="@+id/btnModeSelector"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:layout_marginHorizontal="12dp"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?android:attr/selectableItemBackground">
+
+    <TextView
+        android:id="@+id/tvModeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mando Wi-Fi"
+        android:textColor="@color/text_primary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:text="▾"
+        android:textColor="@color/text_primary"
+        android:textSize="14sp" />
+</LinearLayout>
 
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1">
 
             <!-- ============ PANEL WI-FI (Android TV) ============ -->
             <ScrollView
