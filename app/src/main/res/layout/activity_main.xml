@@ -185,14 +185,17 @@
                         android:gravity="center"
                         android:layout_marginBottom="16dp">
 
-                        <include layout="@layout/pill_placeholder" android:id="@+id/pillVolWifi" />
-
                         <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="vertical"
-                            android:gravity="center">
+    android:layout_width="64dp"
+    android:layout_height="170dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bg_pill"
+    android:paddingVertical="10dp">
+    <TextView android:id="@+id/btnVolUpWifi" android:layout_width="44dp" android:layout_height="44dp" android:text="＋" android:textSize="18sp" android:gravity="center" android:textColor="@color/text_primary" />
+    <TextView android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1" android:gravity="center" android:text="VOL" android:textColor="@color/text_secondary" android:textSize="11sp" />
+    <TextView android:id="@+id/btnVolDownWifi" android:layout_width="44dp" android:layout_height="44dp" android:text="－" android:textSize="18sp" android:gravity="center" android:textColor="@color/text_primary" />
+</LinearLayout>
 
                             <LinearLayout
                                 android:layout_width="wrap_content"
@@ -212,12 +215,19 @@
                                 <TextView android:id="@+id/btnMic" style="@style/RoundIconButton" android:text="🎤" />
                                 <TextView android:id="@+id/btnBack" style="@style/RoundIconButton" android:text="↩" />
                             </LinearLayout>
-                        </LinearLayout>
 
-                        <include layout="@layout/pill_placeholder" android:id="@+id/pillChWifi" />
-                    </LinearLayout>
-
-                </LinearLayout>
+                        <LinearLayout
+    android:layout_width="64dp"
+    android:layout_height="170dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bg_pill"
+    android:paddingVertical="10dp">
+    <TextView android:id="@+id/btnChUpWifi" android:layout_width="44dp" android:layout_height="44dp" android:text="＋" android:textSize="18sp" android:gravity="center" android:textColor="@color/text_primary" />
+    <TextView android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1" android:gravity="center" android:text="VOL" android:textColor="@color/text_secondary" android:textSize="11sp" />
+    <TextView android:id="@+id/btnChDownWifi" android:layout_width="44dp" android:layout_height="44dp" android:text="－" android:textSize="18sp" android:gravity="center" android:textColor="@color/text_primary" />
+</LinearLayout>
+                        
             </ScrollView>
 
             <!-- ============ PANEL INFRARROJO ============ -->
@@ -300,21 +310,29 @@
                         android:gravity="center"
                         android:layout_marginBottom="20dp">
 
-                        <include layout="@layout/pill_placeholder" android:id="@+id/pillVolIr" />
-
                         <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="vertical"
-                            android:gravity="center">
-                            <TextView android:id="@+id/btnMenu" style="@style/OutlinePillButton" android:text="MENU" />
-                            <TextView android:id="@+id/btnMuteIr" style="@style/RoundIconButton" android:text="🔇" />
-                            <TextView android:id="@+id/btnInput" style="@style/OutlinePillButton" android:text="⏭" />
-                        </LinearLayout>
-
-                        <include layout="@layout/pill_placeholder" android:id="@+id/pillChIr" />
-                    </LinearLayout>
+    android:layout_width="64dp"
+    android:layout_height="170dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bg_pill"
+    android:paddingVertical="10dp">
+    <TextView android:id="@+id/btnVolUpIr" android:layout_width="44dp" android:layout_height="44dp" android:text="＋" android:textSize="18sp" android:gravity="center" android:textColor="@color/text_primary" />
+    <TextView android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1" android:gravity="center" android:text="VOL" android:textColor="@color/text_secondary" android:textSize="11sp" />
+    <TextView android:id="@+id/btnVolDownIr" android:layout_width="44dp" android:layout_height="44dp" android:text="－" android:textSize="18sp" android:gravity="center" android:textColor="@color/text_primary" />
+</LinearLayout>
+                        
+                    <LinearLayout
+    android:layout_width="64dp"
+    android:layout_height="170dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bg_pill"
+    android:paddingVertical="10dp">
+    <TextView android:id="@+id/btnChUpIr" android:layout_width="44dp" android:layout_height="44dp" android:text="＋" android:textSize="18sp" android:gravity="center" android:textColor="@color/text_primary" />
+    <TextView android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1" android:gravity="center" android:text="VOL" android:textColor="@color/text_secondary" android:textSize="11sp" />
+    <TextView android:id="@+id/btnChDownIr" android:layout_width="44dp" android:layout_height="44dp" android:text="－" android:textSize="18sp" android:gravity="center" android:textColor="@color/text_primary" />
+</LinearLayout>
 
                     <!-- Teclado numérico -->
                     <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
